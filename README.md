@@ -8,7 +8,9 @@ Furthermore the same two functions are implemented in Python in _my_functions_py
 
 To create a share object, we need to link the .c file via:
 
-**cc -fPIC -shared -o my_functions.so my_functions.c**
+```bash
+$ cc -fPIC -shared -o my_functions.so my_functions.c
+
 
 which create the shared object file _my_functions.so_
 
