@@ -10,7 +10,7 @@ To create a share object, we need to link the .c file via:
 
 ```bash
 $ cc -fPIC -shared -o my_functions.so my_functions.c
-
+```
 
 which create the shared object file _my_functions.so_
 
@@ -20,4 +20,5 @@ C respective in Python and for each function call the elapsed time is displayed.
 Pretty simple example.
 
 **Remark:**
+
 The python module containing the implementations of the two functions must not have the same name as the shared object file has. Otherwise python tries to import the .so-file instead of the python module.
